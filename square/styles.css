@@ -26,6 +26,7 @@ input, button, submit { border:none; }
 /* Color Scheme */
 :root {
   --color-button-bg: #006aff;
+  --color-text: #1A1A1A;
 }
 
 /* Typography / Main Page Styles*/
@@ -44,9 +45,33 @@ body {
 }
 
 
-/* COMPONENTS
-   ================================================ */
+/* ================================================
+    COMPONENTS
+================================================ */
 
+/*  NAVBAR
+================================================ */
 .navbar {
 	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 2%;
+  white-space: nowrap;
+}
+.navbar__logo img { 
+  width: 25px;
+  height: 25px;
+}
+.navbar__button {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 12px 16px;
+}
+.navbar__button:hover {
+  background-color: rgb(207, 207, 207);
+  border-radius: 8px;
 }
