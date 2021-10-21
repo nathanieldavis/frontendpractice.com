@@ -57,6 +57,7 @@ body {
   align-items: center;
   padding: 16px 2%;
   white-space: nowrap;
+  position: sticky;
 }
 .navbar__logo img { 
   width: 25px;
@@ -65,13 +66,32 @@ body {
 .navbar__button {
   text-decoration: none;
   color: var(--color-text);
-  font-weight: 500;
-  font-size: 18px;
-  margin-left: 2%;
-  margin-right: 2%;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 12px 16px;
 }
 .navbar__button:hover {
   background-color: rgb(207, 207, 207);
   border-radius: 8px;
+}
+
+.hero {
+  background-image: url(img/square-header-img.jpg) !important;
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero__text-grid {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero__text-grid h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
 }
